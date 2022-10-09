@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFB300"
+            android:fontFamily="@font/lora_italic"
+            android:padding="10dp"
+            android:text="Sách"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMaSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_italic"
+            android:padding="10dp"
+            android:hint="Mã sách"/>
+
+        <EditText
+            android:id="@+id/edTenSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/lora_italic"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:hint="Tên sách"/>
+
+        <EditText
+            android:id="@+id/edGiaThue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/lora_italic"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:hint="Gía thuê"/>
+
+        <Spinner
+            android:id="@+id/spListLoaiSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

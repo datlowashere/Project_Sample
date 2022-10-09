@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AssignmentProjectSample</string>
+    <string name="title_app">Project Sample</string>
+
+    <string name="ql_phieuMuon">Quản lý phiếu mượn</string>
+    <string name="ql_loaiSach">Quản lý loại sách</string>
+    <string name="ql_sach">Quản lý Sách</string>
+    <string name="ql_thanhVien">Quản lý thành viên</string>
+    <string name="tk_top10">Top 10</string>
+    <string name="tk_doanhThu">Doanh thu</string>
+    <string name="nd_themThuThu">Thêm thủ thư</string>
+    <string name="nd_doiMatKhau">Đổi mật khẩu</string>
+    <string name="nd_thoat">Đăng xuất</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

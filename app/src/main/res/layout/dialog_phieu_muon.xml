@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/linearPM"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView277"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFB300"
+            android:fontFamily="@font/lora_italic"
+            android:padding="10dp"
+            android:text="Phiếu Mượn"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvMaPM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_italic"
+            android:hint="Mã Phiếu mượn"
+            android:padding="10dp" />
+
+        <Spinner
+            android:id="@+id/spHoTenNguoiMuon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_italic"
+            android:padding="10dp" />
+
+        <Spinner
+            android:id="@+id/spTenSachMuon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_italic"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lora_italic"
+                android:padding="10dp"
+                android:text="Tiền Thuê: " />
+
+            <TextView
+                android:id="@+id/tvTienThueSach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/lora_italic"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lora_italic"
+                android:padding="10dp"
+                android:text="Ngày trả: " />
+
+            <TextView
+                android:id="@+id/tvNgayTraSach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/lora_italic"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/ckTrangThai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_italic"
+            android:text="Đã trả sách?"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>

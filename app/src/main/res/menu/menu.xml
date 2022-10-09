@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/qlPhieuMuon"
+        android:title="@string/ql_phieuMuon"
+        android:icon="@drawable/paperstack"/>
+    <item android:id="@+id/qlLoaiSach"
+        android:title="@string/ql_loaiSach"
+        android:icon="@drawable/book_s"/>
+    <item android:id="@+id/qlSach"
+        android:title="@string/ql_sach"
+        android:icon="@drawable/book_"/>
+    <item android:id="@+id/qlThanhVien"
+        android:title="@string/ql_thanhVien"
+        android:icon="@drawable/member"/>
+    <item android:title="Thống kê">
+        <menu>
+            <item android:id="@+id/tkTop10"
+                android:title="@string/tk_top10"
+                android:icon="@drawable/top_10"/>
+            <item android:id="@+id/tkDoanhThu"
+                android:title="@string/tk_doanhThu"
+                android:icon="@drawable/grow_up"/>
+        </menu>
+
+    </item>
+
+    <item android:title="Người dùng">
+        <menu>
+            <item android:id="@+id/ndThemThuThu"
+                android:visible="false"
+                android:title="@string/nd_themThuThu"
+                android:icon="@drawable/add_user"/>
+            <item android:id="@+id/ndDoiMatKhau"
+                android:title="@string/nd_doiMatKhau"
+                android:icon="@drawable/password_code"/>
+            <item android:id="@+id/ndLogout"
+                android:title="@string/nd_thoat"
+                android:icon="@drawable/logout"/>
+        </menu>
+    </item>
+</menu>

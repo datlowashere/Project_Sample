@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SachFragment"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvSach" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabButtonSach"
+        android:src="@drawable/add"
+        android:clickable="true"
+        app:layout_anchor="@id/lvSach"
+        app:layout_anchorGravity="bottom|end"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

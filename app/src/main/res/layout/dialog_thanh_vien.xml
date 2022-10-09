@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFB300"
+            android:fontFamily="@font/lora_italic"
+            android:padding="10dp"
+            android:text="Thành Viên"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvMaTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_italic"
+            android:padding="10dp"
+            android:hint="Mã Thành Viên"/>
+
+        <EditText
+            android:id="@+id/edHoTenTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/lora_italic"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:hint="Họ tên thành viên"/>
+
+        <EditText
+            android:id="@+id/edNgaySinhThanhVien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/lora_italic"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:hint="Ngày sinh"/>
+    </LinearLayout>
+</LinearLayout>
