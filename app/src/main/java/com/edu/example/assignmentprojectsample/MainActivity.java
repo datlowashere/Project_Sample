@@ -11,6 +11,8 @@ import androidx.fragment.app.FragmentManager;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -57,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar=getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_icon);
+
+        ColorDrawable colorDrawable
+                = new ColorDrawable(Color.parseColor("#F4511E"));
+        getSupportActionBar().setBackgroundDrawable(colorDrawable);
 
         PhieuMuonFragment phieuMuonFragment=new PhieuMuonFragment();
         FragmentManager fragmentManager=getSupportFragmentManager();

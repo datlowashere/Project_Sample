@@ -60,6 +60,10 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL("insert into ThuThu values('admin','Admin','admin')");
         db.execSQL("insert into ThuThu values('cda','Cô Em Hồ Ly','123')");
 
+
+
+
+
     }
 
     @Override

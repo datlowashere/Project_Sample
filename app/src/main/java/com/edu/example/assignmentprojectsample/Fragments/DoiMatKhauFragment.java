@@ -54,7 +54,7 @@ public class DoiMatKhauFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 SharedPreferences pref = getActivity().getSharedPreferences("file", Context.MODE_PRIVATE);
-                String user = pref.getString("maTT", "");
+                String user = pref.getString("username", "");
 
                 if (validate() > 0) {
                     ThuThu thuThu = dao.getID(user);
@@ -88,10 +88,10 @@ public class DoiMatKhauFragment extends Fragment {
         int check=1;
         if (edOldPass.getText().length()==0 || edNewPass.getText().length()==0 || edReNewPass.getText().length()==0){
             Toast.makeText(getActivity(),"Thông tin không được bỏ trống",Toast.LENGTH_SHORT).show();
+            check=-1;
         }else{
             SharedPreferences pref = getActivity().getSharedPreferences("file", Context.MODE_PRIVATE);
-
-            String oldPass=pref.getString("matKhau","");
+            String oldPass=pref.getString("password","");
             String newPass=edNewPass.getText().toString();
             String rePass=edReNewPass.getText().toString();
             if(!oldPass.equals(edOldPass.getText().toString())){
