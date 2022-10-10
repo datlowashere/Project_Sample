@@ -33,20 +33,16 @@ public class DBHelper extends SQLiteOpenHelper {
                 "  maSach INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "  tenSach TEXT NOT NULL," +
                 "  giaThue INTEGER NOT NULL," +
-                "  maLoai INTEGER NOT NULL," +
-                "  FOREIGN KEY (maLoai) REFERENCES LoaiSach(maLoai)" +
+                "  maLoai INTEGER NOT NULL REFERENCES LoaiSach(maLoai)" +
                 ")";
         String createTBPhieuMuon="CREATE TABLE PhieuMuon(" +
                 "  maPM INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "  tienThue INTEGER NOT NULL," +
                 "  ngay DATE NOT NULL," +
                 "  traSach INTEGER NOT NULL," +
-                "  maTV INTEGER NOT NULL," +
-                "  maSach INTEGER NOT NULL," +
-                "  maTT TEXT NOT NULL," +
-                "  FOREIGN KEY (maTV) REFERENCES ThanhVien(maTV)," +
-                "  FOREIGN KEY (maSach) REFERENCES Sach(maSach)," +
-                "  FOREIGN KEY (maTT) REFERENCES ThuThu(maTT)" +
+                "  maTV INTEGER REFERENCES ThanhVien(maTV)," +
+                "  maSach INTEGER REFERENCES Sach(maSach)," +
+                "  maTT TEXT REFERENCES ThuThu(maTT)" +
                 ")";
 
         db.execSQL(createTBTT);

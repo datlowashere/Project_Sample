@@ -26,6 +26,7 @@ public class SachDao {
         ContentValues values=new ContentValues();
         values.put("tenSach",obj.tenSach);
         values.put("giaThue",obj.giaThue);
+        values.put("maLoai",obj.maLoai);
 
         return db.insert("Sach",null,values);
     }
@@ -34,6 +35,7 @@ public class SachDao {
         ContentValues values=new ContentValues();
         values.put("tenSach",obj.tenSach);
         values.put("giaThue",obj.giaThue);
+        values.put("maLoai",obj.maLoai);
 
         return db.update("Sach",values,"maSach=?",new String[]{String.valueOf(obj.maSach)});
     }

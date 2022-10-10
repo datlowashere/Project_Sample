@@ -52,15 +52,8 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <ImageButton
-                    android:id="@+id/imgButtonItemsUpDateTT"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/pencil"
-                    tools:layout_gravity="end" />
-
-                <ImageButton
-                    android:id="@+id/imgButtonItemsRevemoveTT"
+                <ImageView
+                    android:id="@+id/imgItemsRevemoveTT"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/remove"

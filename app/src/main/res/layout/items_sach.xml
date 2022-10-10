@@ -3,13 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#F3EDED"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,13 +20,13 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="313dp"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/tvItemsMaSach"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
@@ -31,7 +34,7 @@
 
                 <TextView
                     android:id="@+id/tvItemsTenSach"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
@@ -39,7 +42,7 @@
 
                 <TextView
                     android:id="@+id/tvItemsGiaThue"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
@@ -47,7 +50,7 @@
 
                 <TextView
                     android:id="@+id/tvItemsLoaiSach"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
@@ -58,20 +61,13 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageButton
-                    android:id="@+id/imgButtonItemsUpDateSach"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    app:srcCompat="@drawable/pencil"
-                    tools:layout_gravity="end" />
-
-                <ImageButton
-                    android:id="@+id/imgButtonItemsRevemoveSach"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <ImageView
+                    android:id="@+id/imgItemsRevemoveSach"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
                     app:srcCompat="@drawable/remove"
                     tools:layout_gravity="end" />
             </LinearLayout>

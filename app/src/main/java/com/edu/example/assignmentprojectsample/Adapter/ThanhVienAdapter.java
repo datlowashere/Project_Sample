@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -22,7 +22,7 @@ public class ThanhVienAdapter extends ArrayAdapter<ThanhVien> {
     ThanhVienFragment fragment;
     private ArrayList<ThanhVien> lists;
     TextView tvMaTV,tvTenThanhVien,tvNamSinh;
-    ImageButton imgDel,imgUpdate;
+    ImageView imgDel;
 
 
     public ThanhVienAdapter(@NonNull Context context, ThanhVienFragment fragment, ArrayList<ThanhVien> lists) {
@@ -32,6 +32,8 @@ public class ThanhVienAdapter extends ArrayAdapter<ThanhVien> {
         this.lists = lists;
     }
 
+    @NonNull
+    @Override
     public View getView(int position, @NonNull View view, @NonNull ViewGroup parent){
         View v=view;
         if(v==null){
@@ -51,8 +53,7 @@ public class ThanhVienAdapter extends ArrayAdapter<ThanhVien> {
             tvNamSinh.setText("Năm Sinh: "+item.namSinh);
 
 
-            imgDel=v.findViewById(R.id.imgButtonItemsRevemoveTV);
-            imgUpdate=v.findViewById(R.id.imgButtonUpdateTV);
+            imgDel=v.findViewById(R.id.imgItemsRevemoveTV);
         }
 
         imgDel.setOnClickListener(new View.OnClickListener() {
@@ -62,12 +63,7 @@ public class ThanhVienAdapter extends ArrayAdapter<ThanhVien> {
             }
         });
 
-        imgUpdate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
 
         return v;
     }

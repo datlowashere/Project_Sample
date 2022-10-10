@@ -31,33 +31,19 @@ import java.util.ArrayList;
 public class ThanhVienFragment extends Fragment {
 
 
-    ListView lv;
-    ArrayList<ThanhVien> list;
-    FloatingActionButton fab;
-    Dialog dialog;
-    TextView tvMaTV;
-    EditText edTenTV,edNgaySinh;
-    Button btnSave,btnCancel;
+    private ListView lv;
+    private ArrayList<ThanhVien> list;
+    private FloatingActionButton fab;
+    private Dialog dialog;
+    private TextView tvMaTV;
+    private  EditText edTenTV,edNgaySinh;
+    private Button btnSave,btnCancel;
 
     static ThanhVienDao dao;
-    ThanhVienAdapter adapter;
-    ThanhVien item;
-
-    public ThanhVienFragment() {
-        // Required empty public constructor
-    }
+    private ThanhVienAdapter adapter;
+    private ThanhVien item;
 
 
-    public static ThanhVienFragment newInstance() {
-        ThanhVienFragment fragment = new ThanhVienFragment();
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -96,6 +82,7 @@ public class ThanhVienFragment extends Fragment {
         tvMaTV=dialog.findViewById(R.id.tvMaTV);
         edTenTV=dialog.findViewById(R.id.edHoTenTv);
         edNgaySinh=dialog.findViewById(R.id.edNgaySinhThanhVien);
+
 
         btnSave=dialog.findViewById(R.id.btnSaveTV);
         btnCancel=dialog.findViewById(R.id.btnCancelSaveTV);
