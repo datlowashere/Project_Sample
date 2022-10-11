@@ -124,7 +124,7 @@ public class SachFragment extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 maLoaiSach=listLoaiSach.get(position).maLoai;
-                Toast.makeText(context,"Chọn "+listLoaiSach.get(position).tenLoai,Toast.LENGTH_SHORT).show();
+
 
             }
 

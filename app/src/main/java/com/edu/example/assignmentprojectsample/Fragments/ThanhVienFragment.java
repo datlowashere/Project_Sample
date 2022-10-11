@@ -36,7 +36,7 @@ public class ThanhVienFragment extends Fragment {
     private FloatingActionButton fab;
     private Dialog dialog;
     private TextView tvMaTV;
-    private  EditText edTenTV,edNgaySinh;
+    private EditText edTenTV,edNgaySinh;
     private Button btnSave,btnCancel;
 
     static ThanhVienDao dao;
@@ -92,7 +92,7 @@ public class ThanhVienFragment extends Fragment {
             edTenTV.setText(item.hoTen);
             edNgaySinh.setText(item.namSinh);
         }
-        btnCancel.setOnClickListener((v -> dialog.dismiss()));
+        btnCancel.setOnClickListener((v -> dialog.cancel()));
 
         btnSave.setOnClickListener(v -> {
             item=new ThanhVien();

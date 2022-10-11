@@ -25,6 +25,7 @@ public class ThuThuDao {
 //  Thêm
     public long insert(ThuThu obj){
         ContentValues values=new ContentValues();
+        values.put("maTT",obj.maTT);
         values.put("hoTen",obj.hoTen);
         values.put("matKhau",obj.matKhau);
 
@@ -33,9 +34,10 @@ public class ThuThuDao {
 //  Sửa
     public int update(ThuThu obj){
         ContentValues values=new ContentValues();
+        values.put("hoTen",obj.hoTen);
         values.put("matKhau",obj.matKhau);
 
-        return db.update("ThuThu",values,"maTT=?",new String[]{String.valueOf(obj.maTT)});
+        return db.update("ThuThu",values,"maTT=?",new String[]{obj.maTT});
     }
 
 //    Xóa

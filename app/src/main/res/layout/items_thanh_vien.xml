@@ -24,20 +24,21 @@
                 android:layout_width="214dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/tvItemsMaTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
-                    android:textStyle="bold"
-                    android:text="Textview"/>
+                    android:text="Textview"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/tvItemsHoTenTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
                     android:text="TextView"
@@ -47,6 +48,7 @@
                     android:id="@+id/tvItemsNgaySinh"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
                     android:text="TextView"

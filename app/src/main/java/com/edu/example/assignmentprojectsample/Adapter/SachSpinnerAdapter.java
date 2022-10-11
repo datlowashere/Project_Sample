@@ -8,41 +8,40 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
-import com.edu.example.assignmentprojectsample.Models.ThanhVien;
+import com.edu.example.assignmentprojectsample.Models.LoaiSach;
+import com.edu.example.assignmentprojectsample.Models.Sach;
 import com.edu.example.assignmentprojectsample.R;
 
 import java.util.ArrayList;
 
-public class ThanhVienSpinerAdaper extends ArrayAdapter<ThanhVien> {
-
+public class SachSpinnerAdapter extends ArrayAdapter {
     private Context context;
-    private ArrayList<ThanhVien>lists;
-    TextView tvMaTV,tvTenTv;
+    private ArrayList<Sach>lists;
+    TextView tvMaSach,tvTenSach;
 
-    public ThanhVienSpinerAdaper(@NonNull Context context, ArrayList<ThanhVien> lists) {
+    public SachSpinnerAdapter(@NonNull Context context, ArrayList<Sach>lists) {
         super(context, 0,lists);
         this.context=context;
         this.lists=lists;
     }
 
 
-
-        @NonNull
+    @NonNull
     @Override
     public View getView(int position, @NonNull View view, @NonNull ViewGroup parent){
         View v=view;
         if (v == null) {
             LayoutInflater inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             v=inflater.inflate(R.layout.items_spinner_thanh_vien,null);
+
         }
-        final ThanhVien item = lists.get(position);
+        final Sach item=lists.get(position);
         if(item!=null){
-            tvMaTV=v.findViewById(R.id.tvMaTVSpinner);
-            tvMaTV.setText(item.maTV+".");
-            tvTenTv=v.findViewById(R.id.tvHoTenSpinner);
-            tvTenTv.setText(item.hoTen);
+            tvMaSach=v.findViewById(R.id.tvMaTVSpinner);
+            tvMaSach.setText(item.maLoai+".");
+            tvTenSach=v.findViewById(R.id.tvHoTenSpinner);
+            tvTenSach.setText(item.tenSach);
         }
 
 
@@ -53,19 +52,22 @@ public class ThanhVienSpinerAdaper extends ArrayAdapter<ThanhVien> {
     public View getDropDownView(int position,@NonNull View view,@NonNull ViewGroup parent){
 
         View v=view;
-        if (v == null) {
+        if(v==null){
             LayoutInflater inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             v=inflater.inflate(R.layout.items_spinner_thanh_vien,null);
+
         }
-        final ThanhVien item = lists.get(position);
+        final Sach item=lists.get(position);
         if(item!=null){
-            tvMaTV=v.findViewById(R.id.tvMaTVSpinner);
-            tvMaTV.setText(item.maTV+".");
-            tvTenTv=v.findViewById(R.id.tvHoTenSpinner);
-            tvTenTv.setText(item.hoTen);
+            tvMaSach=v.findViewById(R.id.tvMaTVSpinner);
+            tvMaSach.setText(item.maLoai+".");
+            tvTenSach=v.findViewById(R.id.tvHoTenSpinner);
+            tvTenSach.setText(item.tenSach);
         }
+
 
 
         return v;
+
     }
 }

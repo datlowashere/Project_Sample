@@ -9,7 +9,10 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#F3EDED"
+        app:cardElevation="5sp"
+        app:cardUseCompatPadding="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,30 +20,33 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="313dp"
+                android:layout_width="198dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/tvItemsMaTT"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
                     android:text="TextView" />
 
                 <TextView
                     android:id="@+id/tvItemsHoTenTT"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
                     android:text="TextView" />
 
                 <TextView
                     android:id="@+id/tvItemMatKhauTT"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
                     android:text="TextView" />
@@ -54,7 +60,7 @@
 
                 <ImageView
                     android:id="@+id/imgItemsRevemoveTT"
-                    android:layout_width="wrap_content"
+                    android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/remove"
                     tools:layout_gravity="end" />

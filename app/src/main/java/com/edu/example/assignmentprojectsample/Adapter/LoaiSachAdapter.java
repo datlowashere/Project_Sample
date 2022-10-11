@@ -22,7 +22,7 @@ public class LoaiSachAdapter extends ArrayAdapter<LoaiSach> {
     LoaiSachFragment fragment;
     private ArrayList<LoaiSach>lists;
     TextView tvMaLoai,tvTenLoai;
-    public ImageView imgDel,imgUpdate;
+    public ImageView imgDel;
 
 
 
