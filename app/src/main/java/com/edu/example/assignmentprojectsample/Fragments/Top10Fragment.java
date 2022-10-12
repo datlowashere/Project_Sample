@@ -59,7 +59,7 @@ public class Top10Fragment extends Fragment {
             entries.add(new BarEntry(i,soLuong[i]));
         }
 
-        BarDataSet barDataSet=new BarDataSet(entries,"Chi chú");
+        BarDataSet barDataSet=new BarDataSet(entries,"Tổng số mượn: "+tong);
         barDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
         BarData data=new BarData(barDataSet);
         chart.setData(data);

@@ -57,12 +57,12 @@ public class ThongKeDao {
         return soLuong.toArray(new Integer[soLuong.size()]);
     }
     public int getTongSoLuong(){
-        String sql="select maSach, count(maSach) as soLuong from PhieuMuon group by maSach order by soLuong desc limit 10";
+        String sql="select   SUM(COUNT(masach)) OVER() as tong from PhieuMuon group by maSach order by COUNT(masach) desc limit 10";
         Cursor c= db.rawQuery(sql,null);
         int tong=0;
         if(c.getCount()!=0){
             c.moveToFirst();
-            tong=c.getInt(1);
+            tong=c.getInt(0);
         }
         int kq=tong;
 
@@ -89,7 +89,6 @@ public class ThongKeDao {
         Cursor c=db.rawQuery(sqlDoanhThu,new String[]{tuNgay,denNgay});
         while (c.moveToNext()){
                 list.add(c.getInt(0));
-
         }
         return list.get(0);
     }
