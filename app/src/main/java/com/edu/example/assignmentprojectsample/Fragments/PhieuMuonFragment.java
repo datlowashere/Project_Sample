@@ -6,10 +6,8 @@ import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.os.Build;
 import android.os.Bundle;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
@@ -19,7 +17,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -37,10 +34,8 @@ import com.edu.example.assignmentprojectsample.Models.ThanhVien;
 import com.edu.example.assignmentprojectsample.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 
 
@@ -116,7 +111,7 @@ public class PhieuMuonFragment extends Fragment {
         tvMaPM=dialog.findViewById(R.id.tvMaPM);
         spTV=dialog.findViewById(R.id.spNguoiMuon);
         spSach=dialog.findViewById(R.id.spSachMuon);
-        tvNgay=dialog.findViewById(R.id.tvNgayTraSach);
+        tvNgay=dialog.findViewById(R.id.tvNgayThue);
         tvTienThue=dialog.findViewById(R.id.tvTienThueSach);
         ckTraSach=dialog.findViewById(R.id.ckTrangThai);
         btnSave=dialog.findViewById(R.id.btnSavePhieuMuon);

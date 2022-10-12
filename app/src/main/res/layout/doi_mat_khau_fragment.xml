@@ -9,13 +9,13 @@
     tools:context=".Fragments.DoiMatKhauFragment">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvTitleDoiMatKhau"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Đổi Mật Khẩu"
-        android:textSize="20dp"
+        android:textSize="24dp"
         android:textStyle="bold"
-        tools:textAlignment="center" />
+        android:textAlignment="center" />
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -28,7 +28,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edOldPass"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -42,7 +43,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edNewPass"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -56,7 +58,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edReNewPass"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout

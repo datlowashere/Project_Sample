@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_icon);
 
         ColorDrawable colorDrawable
-                = new ColorDrawable(Color.parseColor("#F4511E"));
+                = new ColorDrawable(Color.parseColor("#FFFF8800"));
         getSupportActionBar().setBackgroundDrawable(colorDrawable);
 
         PhieuMuonFragment phieuMuonFragment=new PhieuMuonFragment();

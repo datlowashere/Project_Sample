@@ -32,11 +32,25 @@
             android:hint="Mã Phiếu mượn"
             android:padding="10dp" />
 
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Người mượn" />
+
         <Spinner
             android:id="@+id/spNguoiMuon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lora_italic" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Tên sách" />
 
         <Spinner
             android:id="@+id/spSachMuon"
@@ -53,7 +67,7 @@
             android:padding="10dp" />
 
         <TextView
-            android:id="@+id/tvNgayTraSach"
+            android:id="@+id/tvNgayThue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lora_italic"
