@@ -1,5 +1,7 @@
 package com.edu.example.assignmentprojectsample.Fragments;
 
+import android.annotation.SuppressLint;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -41,6 +43,7 @@ public class Top10Fragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
+    @SuppressLint("WrongConstant")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -83,12 +86,16 @@ public class Top10Fragment extends Fragment {
         yAxis.setStartAtZero(true);
         yAxis.setDrawGridLines(false);
 
+        yAxis.setGranularity(1.0f);
+        yAxis.setGranularityEnabled(true);
+
+        yAxis1.setGranularity(1.0f);
+        yAxis1.setGranularityEnabled(true);
+
 
         chart.getDescription().setEnabled(false);
         chart.setFitBars(true);
         chart.animateY(3000);
-
-
 
 
 

@@ -15,7 +15,7 @@ import java.util.List;
 public class ThuThuDao {
     private SQLiteDatabase db;
     private List<ThuThu> list;
-    DBHelper dbHelper;
+
 
 
     public ThuThuDao(Context context) {

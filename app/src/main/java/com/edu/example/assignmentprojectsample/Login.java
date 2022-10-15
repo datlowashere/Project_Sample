@@ -43,7 +43,7 @@ public class Login extends AppCompatActivity {
         String user = edUsername.getText().toString();
         String pass = edPassword.getText().toString();
 
-        dao = new ThuThuDao(this);
+        dao = new ThuThuDao(Login.this);
 
         findViewById(R.id.btnLogin).setOnClickListener(new View.OnClickListener() {
             @Override
