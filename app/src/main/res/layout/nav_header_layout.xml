@@ -16,28 +16,33 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTintMode="screen"
         app:cardCornerRadius="300dp"
-        app:cardElevation="5dp">
+        app:cardElevation="6dp">
 
         <ImageView
-            android:id="@+id/imPoly"
+            android:id="@+id/imageViewDT"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:contentDescription=""
-            app:srcCompat="@mipmap/ic_blosssom" />
+            android:contentDescription="ảnh"
+            app:srcCompat="@drawable/ic_blossom_round" />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/tvNavUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:shadowColor="#0B0A0A"
         android:text="Đạt Lô"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#EEFF41"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvPNLib"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="daltpd05558@fpt.edu.vn" />
+        android:text="Chào mừng bạn trở lại !"
+        android:textColor="#EEFF41" />
 </LinearLayout>

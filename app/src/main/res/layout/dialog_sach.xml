@@ -31,7 +31,8 @@
             android:layout_margin="10dp"
             android:fontFamily="@font/lora_italic"
             android:hint="Mã sách"
-            android:padding="10dp" />
+            android:padding="10dp"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/edTenSach"

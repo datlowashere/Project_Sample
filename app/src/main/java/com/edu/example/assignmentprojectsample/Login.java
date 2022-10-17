@@ -62,7 +62,7 @@ public class Login extends AppCompatActivity {
             error+="Tên đăng nhập và mật khẩu không được để trống";
 
         }else {
-            if (dao.checkLogin(user,pass)>0 || (user.equals("admin") && pass.equals("admin"))) {
+            if (dao.checkLogin(user,pass)>0 ) {
                 error+="Đăng nhập thành công";
                 rememberUser(user,pass,ckRemember.isChecked());
                 Intent ilogin = new Intent(getApplicationContext(), MainActivity.class);

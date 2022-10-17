@@ -2,19 +2,21 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-  >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
 
 
     <ListView
         android:id="@+id/lvLoaiSach"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabButtonLoaiSach"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
+        app:backgroundTint="#FF6E40"
         android:src="@drawable/add" />
 
 </FrameLayout>

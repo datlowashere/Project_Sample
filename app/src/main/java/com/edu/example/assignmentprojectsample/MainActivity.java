@@ -76,22 +76,15 @@ public class MainActivity extends AppCompatActivity {
         Intent ilogin=getIntent();
         String user=ilogin.getStringExtra("user");
 
-//        thuThuDao=new ThuThuDao(this);
-//        ThuThu thuThu=thuThuDao.getID(user);
-//        String username=thuThu.hoTen;
-//
-//
-//        if(user!=username){
-//            tvUser.setText("Xin chào Admin");
-//        }else {
-//            tvUser.setText("Xin chào "+username);
-//        }
+        thuThuDao=new ThuThuDao(this);
+        ThuThu thuThu=thuThuDao.getID(user);
+        String username=thuThu.hoTen;
+        tvUser.setText("Xin chào "+username);
+
 
         if (user.equalsIgnoreCase("admin")){
             navigationView.getMenu().findItem(R.id.ndThemThuThu).setVisible(true);
         }
-
-
 
 
 

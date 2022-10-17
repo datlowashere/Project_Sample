@@ -35,7 +35,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="7dp"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/tvItemsTenThanhVienPM"
@@ -43,7 +44,9 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    tools:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/tvItemsTenSachPM"
@@ -51,7 +54,9 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/tvItemsGiaThuePM"
@@ -59,7 +64,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/tvItemsnNgayTra"
@@ -67,7 +73,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/tvItemsTrangThaiPM"
@@ -75,7 +82,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/lora_italic"
                     android:padding="7dp"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textAlignment="center" />
 
             </LinearLayout>
 

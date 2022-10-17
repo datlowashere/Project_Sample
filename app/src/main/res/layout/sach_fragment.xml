@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:clickable="true"
+        app:backgroundTint="#FF6E40"
         android:src="@drawable/add" />
 
 </FrameLayout>
