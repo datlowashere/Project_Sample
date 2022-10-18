@@ -61,7 +61,6 @@ public class ThuThuDao {
     }
 
 
-
 //Lấy Data nhiều tham số
     @SuppressLint("Range")
     private List<ThuThu> getData(String sql, String...selectionArgs){

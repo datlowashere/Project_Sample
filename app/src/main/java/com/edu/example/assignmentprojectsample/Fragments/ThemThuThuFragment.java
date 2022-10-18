@@ -130,6 +130,12 @@ public class ThemThuThuFragment extends Fragment {
                 }
             }
         });
+        btnCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
         dialog.show();
 
     }

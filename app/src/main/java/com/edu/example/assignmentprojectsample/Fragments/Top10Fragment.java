@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import com.edu.example.assignmentprojectsample.Dao.ThongKeDao;
 import com.edu.example.assignmentprojectsample.R;
 import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.BarData;
@@ -66,7 +67,6 @@ public class Top10Fragment extends Fragment {
         barDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
         BarData data=new BarData(barDataSet);
         chart.setData(data);
-        chart.invalidate();
         chart.notifyDataSetChanged();
 
 
@@ -93,7 +93,10 @@ public class Top10Fragment extends Fragment {
         yAxis1.setGranularityEnabled(true);
 
 
-        chart.getDescription().setEnabled(false);
+
+        chart.getDescription().setEnabled(true);
+        chart.getDescription().setText("Số Lượng");
+        chart.getDescription().setPosition(100, 50);
         chart.setFitBars(true);
         chart.animateY(3000);
 

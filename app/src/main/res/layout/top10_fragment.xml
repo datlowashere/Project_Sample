@@ -7,19 +7,10 @@
     tools:context=".Fragments.Top10Fragment"
     android:padding="10dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Top 10"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:layout_margin="20dp"/>
-
 
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/barChartTop"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>
