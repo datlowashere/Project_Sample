@@ -24,7 +24,7 @@ import java.util.GregorianCalendar;
 public class DoanhThuFragment extends Fragment {
 
     private TextView tvDoanhThu;
-    private EditText  tvTuNgay,tvDenNgay;
+    private TextView  tvTuNgay,tvDenNgay;
     private Button btnTuNgay,btnDenNgay,btnDoanhThu;
     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
     int mYear,mMonth,mDate;

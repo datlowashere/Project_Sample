@@ -124,7 +124,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/radius_button"
-                android:text="Đăng nhập" />
+                android:text="Đăng nhập"
+                android:textAllCaps="false" />
 
         </LinearLayout>
 

@@ -17,12 +17,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <LinearLayout
                 android:layout_width="214dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:background="@drawable/shape_border"
+                android:orientation="vertical"
+                android:padding="10dp">
 
                 <TextView
                     android:id="@+id/tvItemsMaTT"
@@ -30,7 +33,6 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:fontFamily="@font/lora_italic"
-                    android:padding="7dp"
                     android:text="TextView" />
 
                 <TextView
@@ -39,7 +41,6 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:fontFamily="@font/lora_italic"
-                    android:padding="7dp"
                     android:text="TextView"
                     android:textSize="16sp" />
 
@@ -49,7 +50,6 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:fontFamily="@font/lora_italic"
-                    android:padding="7dp"
                     android:text="TextView" />
 
             </LinearLayout>
@@ -57,6 +57,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
                 android:orientation="vertical">
 
                 <ImageView

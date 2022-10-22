@@ -65,7 +65,8 @@
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:background="@drawable/radius_button"
-                android:text="lƯU" />
+                android:text="lƯU"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/btnCancelTT"
@@ -74,7 +75,8 @@
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:background="@drawable/radius_button"
-                android:text="hỦY" />
+                android:text="hỦY"
+                android:textAllCaps="false" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
