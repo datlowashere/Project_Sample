@@ -58,7 +58,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/radius_button"
-            android:text="Lưu" />
+            android:text="Lưu"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btnCancelSaveLoaiSach"
@@ -66,7 +67,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/radius_button"
-            android:text="Hủy" />
+            android:text="Hủy"
+            android:textAllCaps="false" />
     </LinearLayout>
 
 </LinearLayout>

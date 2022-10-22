@@ -159,15 +159,25 @@ public class SachFragment extends Fragment {
             public void onClick(View v) {
                 item=new Sach();
                 item.tenSach=edTenSach.getText().toString();
-                item.giaThue= parseInt(edGiaThue.getText().toString());
+                try {
+                    item.giaThue = Integer.parseInt(edGiaThue.getText().toString());
+                }catch (Exception e){
+                    e.printStackTrace();
+                    Toast.makeText(context,"Chưa nhập đủ thông tin",Toast.LENGTH_SHORT).show();
+                }
                 item.maLoai=maLoaiSach;
 
                 if(validate()>0){
                     if(type==0){
-                        if (dao.insert(item)>0){
-                            Toast.makeText(context,"Thêm thành công",Toast.LENGTH_SHORT).show();
-                        }else {
-                            Toast.makeText(context,"Thêm thất bại",Toast.LENGTH_SHORT).show();
+                        try {
+                            if (dao.insert(item) > 0) {
+                                Toast.makeText(context, "Thêm thành công", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(context, "Thêm thất bại", Toast.LENGTH_SHORT).show();
+                            }
+                        }catch (Exception e){
+                            e.printStackTrace();
+                            Toast.makeText(context, "Lỗi", Toast.LENGTH_SHORT).show();
                         }
                     }else{
                         item.maSach= parseInt(tvMaSach.getText().toString());

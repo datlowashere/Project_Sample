@@ -134,7 +134,6 @@ public class PhieuMuonFragment extends Fragment {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 maThanhVien=listThanhVien.get(position).maTV;
 
-
             }
 
             @Override

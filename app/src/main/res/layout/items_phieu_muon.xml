@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -18,17 +17,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="215dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_border"
                 android:orientation="vertical">
-
 
                 <TextView
                     android:id="@+id/tvItemsMaPM"
@@ -36,7 +32,34 @@
                     android:layout_height="wrap_content"
                     android:padding="7dp"
                     android:text="TextView"
-                    android:textAlignment="center" />
+                    android:textAlignment="textStart" />
+
+                <TextView
+                    android:id="@+id/tvItemsGiaThuePM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lora_italic"
+                    android:padding="7dp"
+                    android:text="TextView"
+                    android:textAlignment="textStart" />
+
+                <TextView
+                    android:id="@+id/tvItemsnNgayTra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lora_italic"
+                    android:padding="7dp"
+                    android:text="TextView"
+                    android:textAlignment="textStart" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
 
                 <TextView
                     android:id="@+id/tvItemsTenThanhVienPM"
@@ -59,24 +82,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/tvItemsGiaThuePM"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/lora_italic"
-                    android:padding="7dp"
-                    android:text="TextView"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:id="@+id/tvItemsnNgayTra"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/lora_italic"
-                    android:padding="7dp"
-                    android:text="TextView"
-                    android:textAlignment="center" />
-
-                <TextView
                     android:id="@+id/tvItemsTrangThaiPM"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -89,13 +94,13 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="match_parent"
+                android:gravity="center|end">
 
                 <ImageView
                     android:id="@+id/imgItemsRevemovePM"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:background="@drawable/remove" />
             </LinearLayout>

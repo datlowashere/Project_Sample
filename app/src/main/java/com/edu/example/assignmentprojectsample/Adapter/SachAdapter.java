@@ -1,5 +1,6 @@
 package com.edu.example.assignmentprojectsample.Adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,6 +32,7 @@ public class SachAdapter extends ArrayAdapter<Sach> {
         this.lists=lists;
         this.fragment=fragment;
     }
+    @SuppressLint("SetTextI18n")
     @NonNull
     @Override
     public View getView(int position, @NonNull View view, @NonNull ViewGroup parent){
@@ -46,16 +48,16 @@ public class SachAdapter extends ArrayAdapter<Sach> {
             LoaiSachDao loaiSachDao=new LoaiSachDao(context);
             LoaiSach loaiSach=loaiSachDao.getID(String.valueOf(item.maLoai));
             tvMaSach=v.findViewById(R.id.tvItemsMaSach);
-            tvMaSach.setText("Mã sách: "+item.maSach);
+            tvMaSach.setText("Mã: "+item.maSach);
 
             tvTenSach=v.findViewById(R.id.tvItemsTenSach);
-            tvTenSach.setText("Tên sách: "+item.tenSach);
+            tvTenSach.setText("Tên: "+item.tenSach);
 
             tvGiaThue=v.findViewById(R.id.tvItemsGiaThue);
-            tvGiaThue.setText("Gía sách: "+item.giaThue);
+            tvGiaThue.setText("Giá: "+item.giaThue);
 
             tvLoai=v.findViewById(R.id.tvItemsLoaiSach);
-            tvLoai.setText("Loại Sách: "+loaiSach.tenLoai);
+            tvLoai.setText("Loại: "+loaiSach.tenLoai);
 
             imgDel=v.findViewById(R.id.imgItemsRevemoveSach);
         }

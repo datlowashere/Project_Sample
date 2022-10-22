@@ -69,12 +69,12 @@ public class PhieuMuonAdapter extends ArrayAdapter<PhieuMuon> {
             sachDao=new SachDao(context);
             Sach sach=sachDao.getID(String.valueOf(item.maSach));
             tvTenSach=view.findViewById(R.id.tvItemsTenSachPM);
-            tvTenSach.setText("Tên sách: "+sach.tenSach);
+            tvTenSach.setText("Sách: "+sach.tenSach);
             tvTienThue=view.findViewById(R.id.tvItemsGiaThuePM);
             tvTienThue.setText("Tiền thuê: "+item.tienThue);
 
             tvNgay=view.findViewById(R.id.tvItemsnNgayTra);
-            tvNgay.setText("Ngày Thuê: " + sdf.format(item.ngay));
+            tvNgay.setText("Ngày: " + sdf.format(item.ngay));
 
             tvTraSach=view.findViewById(R.id.tvItemsTrangThaiPM);
             if(item.traSach==1){

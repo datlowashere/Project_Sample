@@ -15,16 +15,19 @@ import android.widget.TextView;
 
 import com.edu.example.assignmentprojectsample.Dao.ThongKeDao;
 import com.edu.example.assignmentprojectsample.R;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.highlight.Highlight;
+import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 
-public class DoanhThuFragment extends Fragment {
+public class DoanhThuFragment extends Fragment  {
 
     private TextView tvDoanhThu;
-    private EditText  tvTuNgay,tvDenNgay;
+    private TextView  tvTuNgay,tvDenNgay;
     private Button btnTuNgay,btnDenNgay,btnDoanhThu;
     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
     int mYear,mMonth,mDate;
@@ -73,6 +76,8 @@ public class DoanhThuFragment extends Fragment {
                     DatePickerDialog d=new DatePickerDialog(getActivity(),0,denNgay,mYear,mMonth,mDate);
                     d.show();
                 }
+
+
             }
         });
 
