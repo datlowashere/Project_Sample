@@ -125,7 +125,6 @@ public class SachFragment extends Fragment {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 maLoaiSach=listLoaiSach.get(position).maLoai;
 
-
             }
 
             @Override

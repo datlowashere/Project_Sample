@@ -88,9 +88,6 @@ public class MainActivity extends AppCompatActivity {
             navigationView.getMenu().findItem(R.id.ndThemThuThu).setVisible(true);
         }
 
-
-
-
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

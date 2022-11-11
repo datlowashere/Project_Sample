@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
@@ -18,32 +18,43 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
 
             <LinearLayout
-                android:layout_width="233dp"
+                android:layout_width="230dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_border"
+                android:orientation="vertical"
+                android:padding="10dp">
 
                 <TextView
                     android:id="@+id/tvItemsMaLoai"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/lora_italic"
-                    android:padding="7dp"
+                    android:padding="5dp"
                     android:text="TextView"
-                    android:textAlignment="center"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-----------------------------------------------"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/tvItemsTenLoai"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/lora_italic"
-                    android:padding="7dp"
+                    android:padding="5dp"
                     android:text="TextView"
-                    android:textAlignment="center"
+                    android:textAlignment="textStart"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -58,6 +69,7 @@
                     android:id="@+id/imgItemsRevemoveLoai"
                     android:layout_width="45dp"
                     android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
                     app:srcCompat="@drawable/remove"
                     tools:layout_gravity="end" />
             </LinearLayout>

@@ -96,6 +96,7 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:hintEnabled="true"
                     android:hint="Mật khẩu"
                     app:errorEnabled="true">
 

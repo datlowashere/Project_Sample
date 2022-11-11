@@ -110,10 +110,16 @@ public class ThemThuThuFragment extends Fragment {
 
                 if(validate()>0){
                     if(type==0){
-                        if (dao.insert(item)>0){
-                            Toast.makeText(context,"Thêm thành công",Toast.LENGTH_SHORT).show();
+                        boolean checkTT=dao.checkUsername(item.maTT);
+                        if(checkTT==false) {
+                            if (dao.insert(item) > 0) {
+                                Toast.makeText(context, "Thêm thành công", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(context, "Thêm thất bại", Toast.LENGTH_SHORT).show();
+
+                            }
                         }else{
-                            Toast.makeText(context,"Thêm thất bại",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "Mã thủ thư đã tồn tại", Toast.LENGTH_SHORT).show();
 
                         }
                     }else{

@@ -65,7 +65,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:background="@drawable/radius_button"
-                android:text="lƯU"
+                android:text="Lưu"
                 android:textAllCaps="false" />
 
             <Button
@@ -75,7 +75,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:background="@drawable/radius_button"
-                android:text="hỦY"
+                android:text="Hủy"
                 android:textAllCaps="false" />
         </LinearLayout>
     </LinearLayout>
