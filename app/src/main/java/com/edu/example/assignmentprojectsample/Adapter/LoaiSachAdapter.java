@@ -25,8 +25,6 @@ public class LoaiSachAdapter extends ArrayAdapter<LoaiSach> {
     public ImageView imgDel;
 
 
-
-
     public LoaiSachAdapter(@NonNull Context context,LoaiSachFragment fragment,ArrayList<LoaiSach> lists) {
         super(context, 0,lists);
         this.context=context;
@@ -41,9 +39,7 @@ public class LoaiSachAdapter extends ArrayAdapter<LoaiSach> {
         if(v==null){
             LayoutInflater inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             v=inflater.inflate(R.layout.items_loai_sach,null);
-
         }
-
         final LoaiSach item=lists.get(position);
         if(item!=null){
             tvMaLoai=v.findViewById(R.id.tvItemsMaLoai);
@@ -52,10 +48,7 @@ public class LoaiSachAdapter extends ArrayAdapter<LoaiSach> {
             tvTenLoai.setText("Tên loại: "+item.tenLoai);
 
             imgDel=v.findViewById(R.id.imgItemsRevemoveLoai);
-
-
         }
-
         imgDel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,8 +56,6 @@ public class LoaiSachAdapter extends ArrayAdapter<LoaiSach> {
 
             }
         });
-
-
         return v;
 
     }

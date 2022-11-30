@@ -58,8 +58,6 @@ public class ThanhVienDao {
         return list.get(0);
     }
 
-
-
 //Lấy Data nhiều tham số
     @SuppressLint("Range")
     private List<ThanhVien> getData(String sql, String...selectionArgs){

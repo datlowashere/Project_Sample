@@ -155,7 +155,6 @@ public class PhieuMuonFragment extends Fragment {
                 tienThue=listSach.get(position).giaThue;
                 tvTienThue.setText("Tiền thuê: "+tienThue);
 
-
             }
 
             @Override
@@ -165,7 +164,6 @@ public class PhieuMuonFragment extends Fragment {
         });
 
         if(type!=0){
-
             tvMaPM.setText(String.valueOf(item.maPM));
             for (int i=0;i<listThanhVien.size();i++){
                 if(item.maTV==(listThanhVien.get(i).maTV)){

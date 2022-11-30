@@ -24,7 +24,6 @@ public class LoaiSachSpinnerAdapter extends ArrayAdapter<LoaiSach> {
         this.lists=lists;
     }
 
-
     @NonNull
     @Override
     public View getView(int position, @NonNull View view, @NonNull ViewGroup parent){
@@ -32,7 +31,6 @@ public class LoaiSachSpinnerAdapter extends ArrayAdapter<LoaiSach> {
         if (v == null) {
             LayoutInflater inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             v=inflater.inflate(R.layout.items_spinner_thanh_vien,null);
-
         }
         final LoaiSach item=lists.get(position);
         if(item!=null){
@@ -41,19 +39,14 @@ public class LoaiSachSpinnerAdapter extends ArrayAdapter<LoaiSach> {
             tvTenLoai=v.findViewById(R.id.tvHoTenSpinner);
             tvTenLoai.setText(item.tenLoai);
         }
-
-
         return v;
     }
-
     @NonNull
     public View getDropDownView(int position,@NonNull View view,@NonNull ViewGroup parent){
-
         View v=view;
         if(v==null){
             LayoutInflater inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             v=inflater.inflate(R.layout.items_spinner_thanh_vien,null);
-
         }
         final LoaiSach item=lists.get(position);
         if(item!=null){
@@ -62,9 +55,6 @@ public class LoaiSachSpinnerAdapter extends ArrayAdapter<LoaiSach> {
             tvTenLoai=v.findViewById(R.id.tvHoTenSpinner);
             tvTenLoai.setText(item.tenLoai);
         }
-
-
-
         return v;
 
     }

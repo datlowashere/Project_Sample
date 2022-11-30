@@ -116,7 +116,6 @@ public class SachFragment extends Fragment {
         listLoaiSach=new ArrayList<LoaiSach>();
         loaiSachDao=new LoaiSachDao(context);
         listLoaiSach=(ArrayList<LoaiSach>)loaiSachDao.getAll();
-
         spinnerAdapter=new LoaiSachSpinnerAdapter(context,listLoaiSach);
         spinner.setAdapter(spinnerAdapter);
 

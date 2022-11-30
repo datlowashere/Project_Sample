@@ -52,15 +52,12 @@ public class SachDao {
         return getData(sql);
     }
 
-
 //  Lấy theo ID
     public Sach getID(String id){
         String sql="select * from Sach where maSach=?";
         list=getData(sql,id);
         return list.get(0);
     }
-
-
 
 //Lấy Data nhiều tham số
     @SuppressLint("Range")

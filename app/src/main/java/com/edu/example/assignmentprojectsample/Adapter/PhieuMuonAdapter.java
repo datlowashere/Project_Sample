@@ -31,10 +31,11 @@ public class PhieuMuonAdapter extends ArrayAdapter<PhieuMuon> {
     private Context context;
     private PhieuMuonFragment fragment;
     private ArrayList<PhieuMuon>lists;
-    private  TextView tvMaPM,tvTenTV,tvTenSach,tvTienThue,tvNgay,tvTraSach;
+    private TextView tvMaPM,tvTenTV,tvTenSach,tvTienThue,tvNgay,tvTraSach;
     private ImageView imgDel;
     private SachDao sachDao;
     private ThanhVienDao thanhVienDao;
+    @SuppressLint("SimpleDateFormat")
     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
 
@@ -43,7 +44,6 @@ public class PhieuMuonAdapter extends ArrayAdapter<PhieuMuon> {
         this.context=context;
         this.fragment=fragment;
         this.lists=lists;
-
     }
 
     @SuppressLint("SetTextI18n")
@@ -55,7 +55,6 @@ public class PhieuMuonAdapter extends ArrayAdapter<PhieuMuon> {
         if(view==null){
             LayoutInflater inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view=inflater.inflate(R.layout.items_phieu_muon,null);
-
         }
         final PhieuMuon item=lists.get(position);
         if(item!=null){

@@ -28,14 +28,6 @@ public class PhieuMuonDao {
 //  Thêm
     public long insert(PhieuMuon obj){
 
-
-//        maPM INTEGER PRIMARY KEY AUTOINCREMENT," +
-//        "  tienThue INTEGER NOT NULL," +
-//                "  ngay DATE NOT NULL," +
-//                "  traSach INTEGER NOT NULL," +
-//                "  maTV INTEGER REFERENCES ThanhVien(maTV)," +
-//                "  maSach INTEGER REFERENCES Sach(maSach)," +
-//                "  maTT TEXT REFERENCES ThuThu(maTT)
         ContentValues values=new ContentValues();
         values.put("tienThue",obj.tienThue);
         values.put("ngay", sdf.format(obj.ngay));
@@ -49,14 +41,12 @@ public class PhieuMuonDao {
 //  Sửa
     public int update(PhieuMuon obj){
         ContentValues values=new ContentValues();
-
         values.put("tienThue",obj.tienThue);
         values.put("ngay", sdf.format(obj.ngay));
         values.put("traSach",obj.traSach);
         values.put("maTV",obj.maTV);
         values.put("maSach",obj.maSach);
         values.put("maTT",obj.maTT);
-
 
         return db.update("PhieuMuon",values,"maPM=?",new String[]{String.valueOf(obj.maPM)});
     }

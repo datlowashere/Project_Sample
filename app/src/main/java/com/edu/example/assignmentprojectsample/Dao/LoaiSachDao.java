@@ -35,12 +35,10 @@ public class LoaiSachDao {
 
         return db.update("LoaiSach",values,"maLoai=?",new String[]{String.valueOf(obj.maLoai)});
     }
-
 //    Xóa
     public int delete(String id){
         return db.delete("LoaiSach","maLoai=?",new String[]{id});
     }
-
 
 //    Lấy tất vả danh sách
     public List<LoaiSach> getAll(){
@@ -48,15 +46,12 @@ public class LoaiSachDao {
         return getData(sql);
     }
 
-
 //  Lấy theo ID
     public LoaiSach getID(String id){
         String sql="select * from LoaiSach where maLoai=?";
         list=getData(sql,id);
         return list.get(0);
     }
-
-
 
 //Lấy Data nhiều tham số
     @SuppressLint("Range")

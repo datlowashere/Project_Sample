@@ -107,16 +107,13 @@ public class LoaiSachFragment extends Fragment implements AdapterView.OnItemLong
                     if(type==0) {
                         if (dao.insert(iteam) > 0) {
                             Toast.makeText(context, "Lưu thành công!", Toast.LENGTH_SHORT).show();
-
                         } else {
                             Toast.makeText(context, "Lưu nhật thành công!", Toast.LENGTH_SHORT).show();
-
                         }
                     }else{
                         iteam.maLoai= Integer.parseInt(tvMaLoai.getText().toString());
                         if(dao.update(iteam)>0){
                             Toast.makeText(context,"Cập nhật thành công!",Toast.LENGTH_SHORT).show();
-
                         }else{
                             Toast.makeText(context,"Cập nhật thất bại!",Toast.LENGTH_SHORT).show();
 
@@ -184,7 +181,6 @@ public class LoaiSachFragment extends Fragment implements AdapterView.OnItemLong
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
         iteam=list.get(position);
         openDialog(getActivity(),1);
-
         return false;
     }
 }
